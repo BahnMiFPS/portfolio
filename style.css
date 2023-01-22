@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&display=swap");
+
+/* Qua met moi roi thay oi huhu */
+/* reference: https://www.davidhurtado.dev/ */
+
+:root {
+	--demo-brown: #5c4a40;
+	--brown--dark: #302722;
+	--code-dark: #1d2329;
+}
+
+* {
+	box-sizing: border-box;
+	color: #cecece;
+	font-family: "Fira Code", monospace;
+	margin: 0;
+	padding: 0;
+}
+
+banner {
+	position: relative;
+}
+.banner-container {
+	position: relative;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	overflow: hidden;
+	background-color: #212529;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width: 300%;
+	z-index: 1;
+	opacity: 0.1;
+}
+
+.color-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #362a1d;
+	width: 100%;
+	height: 100vh;
+	opacity: 0.7;
+}
+
+.primary-btn {
+	background-color: initial;
+	border: 2px solid #cecece;
+	border-radius: 4px;
+	font-size: 0.875rem;
+	font-weight: 500;
+	padding: 9px 18px;
+	text-transform: uppercase;
+}
+
+.primary-btn:hover {
+	background-color: #cecece;
+	color: var(--demo-brown);
+	cursor: pointer;
+}
+
+#codeVid {
+	position: absolute;
+	top: 0;
+	left: -5%;
+	width: 50%;
+}
+
+.text {
+	margin-left: 10%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	z-index: 20;
+}
+
+.title,
+.info {
+	padding-bottom: 10px;
+	z-index: 20;
+}
+
+.avatar img {
+	flex-shrink: 1;
+	overflow: hidden;
+	padding: 100px;
+}
+
+.info {
+	font-size: 0.875rem;
+	width: 600px;
+}
+
+.socials-btn {
+	display: flex;
+	align-items: center;
+	flex: 1 0 auto;
+}
+
+.btn-logo {
+	margin-left: 20px;
+	fill: #cecece;
+}
+
+.skill-container {
+	display: flex;
+	position: absolute;
+	box-sizing: border-box;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	width: 50%;
+	background-color: #212529;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	left: 25%;
+	margin-top: -50px;
+	z-index: 5;
+}
+
+.skill-items {
+	width: 70px;
+	height: 70px;
+}
+
+main {
+	background: #212529;
+	height: 100%;
+	position: relative;
+	text-align: center;
+}
+
+.projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: auto;
+	align-items: center;
+	padding: 20px;
+}
+
+.projects-title {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-size: 2.5rem;
+	border-bottom: #5c4a40;
+	text-transform: uppercase;
+}
+
+.projects-title .underline {
+	position: relative;
+}
+
+.projects-title .underline:after {
+	content: "";
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: #5c4a40;
+	bottom: 0;
+	left: 0;
+}
+
+.project {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 130px;
+	width: auto;
+}
+
+.preview .img-container img {
+	width: 500px;
+	border-radius: 8px;
+}
+
+.txt-btn {
+	display: flex;
+	flex-flow: column wrap;
+	text-align: left;
+	align-items: flex-start;
+	margin-left: 100px;
+}
+
+.txt-container h4 {
+	font-weight: 400;
+	font-size: 1.5rem;
+}
+.txt-container p {
+	padding-top: 10px;
+	max-width: 500px;
+}
+
+.btn-container {
+	margin-top: 30px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.demo {
+	background-color: var(--demo-brown);
+	border: solid 2px #5c4a40;
+	margin-right: 10px;
+	opacity: 1;
+}
+
+.demo:hover,
+.code:hover {
+	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+	cursor: pointer;
+}
+
+.code {
+	background-color: var(--code-dark);
+	opacity: 1;
+}
+
+.project-reversed {
+	flex-flow: row-reverse nowrap;
+}
+
+.txt-btn-reversed {
+	margin-left: 0;
+	margin-right: 100px;
+}
+
+/* Footer */
+
+footer {
+	position: relative;
+	height: 100%;
+	background-color: var(--brown--dark);
+}
+
+.footer-container {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-contact {
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+
+.contact-box {
+	border: 1px solid var(--demo-brown);
+	border-radius: 5px;
+	padding: 30px;
+	margin: 0;
+	margin-bottom: 30px;
+}
+
+.contact-box form {
+	display: flex;
+	height: 100%;
+	width: 520px;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.contact-box input,
+.contact-box textarea {
+	margin-top: 2px;
+	margin-bottom: 15px;
+	background-color: var(--code-dark);
+	outline-color: #cecece;
+	border: 0;
+	border-bottom: 1px solid var(--demo-brown);
+	padding: 8px 14px;
+	width: 100%;
+}
+
+.contact-box .demo {
+	margin: auto;
+	padding: 8px 16px;
+	margin-top: 30px;
+}
+
+.contact-box textarea {
+	resize: none;
+	height: 150px;
+}
